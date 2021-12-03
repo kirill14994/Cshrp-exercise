@@ -11,6 +11,14 @@ if (number > 100)
     Console.WriteLine(last);
 }
 
+if (number > 999)
+{
+    int n = number % 100;
+    int third = n / 10;
+
+    Console.WriteLine(third);
+}
+
 else
 {
     Console.WriteLine("нет");
