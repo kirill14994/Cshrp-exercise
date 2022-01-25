@@ -8,23 +8,20 @@ int Sum(int start, int end)
     if (start > end)
     {
         return Sum(end, start);
-        // int temp = start;
-        // start = end;
-        // end = temp;
+                                // int temp = start;
+                                // start = end;
+                                // end = temp;
     }
 
     if (start != end)
     {
         return start + Sum(start + 1, end);
     }
-    // if (start > end)
-    // {
-    //     return start + Sum(start - 1, end);
-    // }
-    else 
-        {
-            return end;
-        }
+                                // if (start > end)
+                                // {
+                                //     return start + Sum(start - 1, end);
+                                // }
+    else return end;
 }
 
 Console.WriteLine(Sum(N, M));
